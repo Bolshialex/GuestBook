@@ -3,7 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Form</title>
+    <link rel="icon" href="/imgs/contacts.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/home.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Contact Form</h1>
+      <form>
+        <div class="flex-row">
+          <div class="form-items">
+            <label for="fName">First Name</label>
+            <input type="text" class="input-field" name="fName" />
+          </div>
+          <div class="form-items">
+            <label for="lName">Last Name</label>
+            <input type="text" class="input-field" name="lName" />
+          </div>
+          <div class="form-items">
+            <label for="job-title">Job Title</label>
+            <input type="text" class="input-field" name="job-title" />
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="form-items">
+            <label for="company">Company</label>
+            <input type="text" class="input-field" name="company" />
+          </div>
+          <div class="form-items">
+            <label for="linked-in">LinkedIn URL</label>
+            <input type="text" class="input-field" name="linked-in" />
+          </div>
+          <div class="form-items">
+            <label for="email">Email</label>
+            <input type="email" class="input-field" name="email" />
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="form-items">
+            <label for="past-meeting">Where did we meet?</label>
+            <select name="" id="" class="input-field">
+              <option value="">blah</option>
+              <option value="">blah</option>
+              <option value="">blah</option>
+            </select>
+          </div>
+          <div class="form-items">
+            <label for="other-meet">Other(Please Specify)</label>
+            <input type="text" name="other-meet" class="input-field" />
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="form-items">
+            <label for="message">Message</label>
+            <textarea name="message"></textarea>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label for="">Please add me to your mailing list</label>
+        </div>
+        <div class="flex-row">
+          <p>Choose an email format:</p>
+          <input type="radio" />
+          <label for="">HTML</label>
+          <input type="radio" />
+          <label for="">Text</label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
