@@ -16,67 +16,141 @@
   <body>
     <div class="container">
       <h1>Contact Form</h1>
-      <form>
+      <form method="post" action="/submit-info">
         <div class="flex-row">
           <div class="form-items">
-            <label for="fName">First Name</label>
-            <input type="text" class="input-field" name="fName" />
+            <label class="label-field" for="fName">First Name</label>
+            <input
+              type="text"
+              class="input-field"
+              name="fName"
+              id="fName"
+              required
+            />
           </div>
           <div class="form-items">
-            <label for="lName">Last Name</label>
-            <input type="text" class="input-field" name="lName" />
+            <label class="label-field" for="lName">Last Name</label>
+            <input
+              type="text"
+              class="input-field"
+              name="lName"
+              id="lName"
+              required
+            />
           </div>
           <div class="form-items">
-            <label for="job-title">Job Title</label>
-            <input type="text" class="input-field" name="job-title" />
+            <label class="label-field" for="job-title">Job Title</label>
+            <input
+              type="text"
+              class="input-field"
+              name="job-title"
+              id="job-title"
+              required
+            />
           </div>
         </div>
         <div class="flex-row">
           <div class="form-items">
-            <label for="company">Company</label>
-            <input type="text" class="input-field" name="company" />
+            <label class="label-field" for="company">Company</label>
+            <input
+              type="text"
+              class="input-field"
+              name="company"
+              id="company"
+              required
+            />
           </div>
           <div class="form-items">
-            <label for="linked-in">LinkedIn URL</label>
-            <input type="text" class="input-field" name="linked-in" />
+            <label class="label-field" for="linked-in">LinkedIn URL</label>
+            <input
+              type="text"
+              class="input-field"
+              name="linked-in"
+              id="linked-in"
+              required
+            />
           </div>
           <div class="form-items">
-            <label for="email">Email</label>
-            <input type="email" class="input-field" name="email" />
+            <label class="label-field" for="email">Email</label>
+            <input
+              type="email"
+              class="input-field"
+              name="email"
+              id="email"
+              required
+            />
           </div>
         </div>
         <div class="flex-row">
           <div class="form-items">
-            <label for="past-meeting">Where did we meet?</label>
-            <select name="" id="" class="input-field">
-              <option value="">blah</option>
-              <option value="">blah</option>
-              <option value="">blah</option>
+            <label class="label-field" for="past-meeting"
+              >Where did we meet?</label
+            >
+            <select class="input-field" id="past-meeting" name="past-meeting">
+              <option value=""></option>
+              <option value="hackathon">Hackathon</option>
+              <option value="job-fair">Job Fair</option>
+              <option value="tech-conference">Tech Conference</option>
+              <option value="college-club">College Club</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="form-items">
-            <label for="other-meet">Other(Please Specify)</label>
-            <input type="text" name="other-meet" class="input-field" />
+            <label class="label-field" for="other-meet"
+              >Other(Please Specify)</label
+            >
+            <input
+              type="text"
+              name="other-meet"
+              class="input-field"
+              id="other-meet"
+            />
           </div>
         </div>
         <div class="flex-row">
           <div class="form-items">
-            <label for="message">Message</label>
-            <textarea name="message"></textarea>
+            <label class="label-field" for="message">Message</label>
+            <textarea
+              name="message"
+              id="msg-text"
+              rows="7"
+              placeholder="Enter message here"
+            ></textarea>
           </div>
         </div>
         <div>
-          <input type="checkbox" />
-          <label for="">Please add me to your mailing list</label>
+          <input
+            type="checkbox"
+            id="input-checkbox"
+            name="mailing-list"
+            value="checked"
+          />
+          <label class="label-field" for="input-checkbox"
+            >Please add me to your mailing list</label
+          >
         </div>
-        <div class="flex-row">
-          <p>Choose an email format:</p>
-          <input type="radio" />
-          <label for="">HTML</label>
-          <input type="radio" />
-          <label for="">Text</label>
+        <div class="email-format">
+          <p>
+            Choose an email format:<span
+              ><label class="label-field"
+                ><input
+                  type="radio"
+                  name="email-format"
+                  value="html"
+                />HTML</label
+              ><label class="label-field"
+                ><input
+                  type="radio"
+                  name="email-format"
+                  value="text"
+                />Text</label
+              ></span
+            >
+          </p>
         </div>
-        <button type="submit">Submit</button>
+        <div>
+          <button class="btn-submit" type="submit">Submit</button>
+        </div>
       </form>
     </div>
   </body>

@@ -4,33 +4,125 @@
 
 body {
   height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  font-size: 1.25rem;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 242, 156, 0.475),
+    rgba(255, 166, 0, 0.832)
+  );
+}
+h1 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: 45px;
 }
 
 .container {
-  border: 1px solid lightgray;
-  width: 60%;
-  text-align: center;
-  padding: 25px;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 25px;
+  width: 40%;
+  box-shadow: -5px 3px 10px rgb(47, 47, 47);
 }
 
 .flex-row {
   display: flex;
-  justify-content: space-between;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .form-items {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  flex: 1;
+  gap: 4px;
 }
 
 .input-field {
-  padding: 0.4rem;
-  font-size: 1rem;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 0.15rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #495057;
+  cursor: pointer;
+}
+
+.email-format {
+  display: inline;
+  margin: 20px 0;
+}
+
+.label-field {
+  margin: 0 5px;
+}
+
+.btn-submit {
+  border: none;
+  background: rgb(90, 90, 90);
+  color: white;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.btn-submit:hover {
+  background-color: #71b356;
+}
+
+#msg-text {
+  font-size: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+#input-checkbox {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+}
+@media screen and (max-width: 1950px) {
+  .container {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 875px) {
+  .container {
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
 }
