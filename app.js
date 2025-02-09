@@ -16,9 +16,7 @@ app.get("/", (req, res) => {
 
 app.post("/submit-info", (req, res) => {
   contactTest.push(req.body);
-  res.send(
-    `<h1>Thank you for submitting ${req.body.fName}. I will respond soon</h1>`
-  );
+  res.sendFile(`${import.meta.dirname}/views/success.html`);
 });
 
 app.get("/admin/contacts", (req, res) => {
