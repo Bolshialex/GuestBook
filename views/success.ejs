@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link rel="icon" href="/imgs/contacts.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/success.css" />
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <h1>Thank's For Contacting Me <%= contact.fName %></h1>
+        <div class="summary">
+          <h3>Submission Summary</h3>
+          <p>
+            <strong>Name:</strong> <%= contact.fName %> <%= contact.lName %>
+          </p>
+          <p><strong>Job Title:</strong> <%= contact.jobTitle %></p>
+          <p><strong>Company:</strong> <%= contact.company %></p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="<%= contact.linkedIn %>"><%= contact.linkedIn %></a>
+          </p>
+          <p><strong>Email:</strong> <%= contact.email %></p>
+          <p><strong>Past Meeting:</strong> <%= contact.pastMeeting %></p>
+          <p><strong>Other Meeting Notes:</strong> <%= contact.otherMeet %></p>
+          <p><strong>Message:</strong> <%= contact.message %></p>
+          <p>
+            <strong>Mailing List:</strong> <%= contact.mailingList ?
+            "Subscribed" : "Not Subscribed" %>
+          </p>
+          <p><strong>Email Format:</strong> <%= contact.emailFormat %></p>
+          <p><strong>Submitted On:</strong> <%= contact.timestamp %></p>
+        </div>
+        <div class="btn-container">
+          <a href="/">
+            <button class="back-btn">Back to form</button>
+          </a>
+
+          <a href="/admin/contacts">
+            <button class="back-btn">Admin</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

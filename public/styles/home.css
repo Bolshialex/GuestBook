@@ -27,7 +27,8 @@ h1 {
   padding: 30px;
   margin: 25px;
   width: 40%;
-  box-shadow: -5px 3px 10px rgb(47, 47, 47);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .flex-row {
@@ -84,6 +85,11 @@ select {
 
 .btn-submit:hover {
   background-color: #71b356;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 #msg-text {
