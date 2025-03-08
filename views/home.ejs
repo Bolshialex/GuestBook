@@ -19,66 +19,45 @@
       <form method="post" action="/submit-info">
         <div class="flex-row">
           <div class="form-items">
-            <label class="label-field" for="fName">First Name</label>
-            <input
-              type="text"
-              class="input-field"
-              name="fName"
-              id="fName"
-              required
-            />
+            <label class="label-field" for="fName">First Name*</label>
+            <input type="text" class="input-field" name="fName" id="fName" />
           </div>
           <div class="form-items">
-            <label class="label-field" for="lName">Last Name</label>
-            <input
-              type="text"
-              class="input-field"
-              name="lName"
-              id="lName"
-              required
-            />
+            <label class="label-field" for="lName">Last Name*</label>
+            <input type="text" class="input-field" name="lName" id="lName" />
           </div>
           <div class="form-items">
-            <label class="label-field" for="job-title">Job Title</label>
+            <label class="label-field" for="job-title">Job Title*</label>
             <input
               type="text"
               class="input-field"
               name="job-title"
               id="job-title"
-              required
             />
           </div>
         </div>
         <div class="flex-row">
           <div class="form-items">
-            <label class="label-field" for="company">Company</label>
+            <label class="label-field" for="company">Company*</label>
             <input
               type="text"
               class="input-field"
               name="company"
               id="company"
-              required
             />
           </div>
           <div class="form-items">
-            <label class="label-field" for="linked-in">LinkedIn URL</label>
+            <label class="label-field" for="linked-in">LinkedIn URL*</label>
             <input
               type="text"
               class="input-field"
               name="linked-in"
               id="linked-in"
-              required
             />
           </div>
           <div class="form-items">
-            <label class="label-field" for="email">Email</label>
-            <input
-              type="email"
-              class="input-field"
-              name="email"
-              id="email"
-              required
-            />
+            <label class="label-field" for="email">Email*</label>
+            <input type="email" class="input-field" name="email" id="email" />
           </div>
         </div>
         <div class="flex-row">
@@ -87,12 +66,11 @@
               >Where did we meet?</label
             >
             <select class="input-field" id="past-meeting" name="past-meeting">
-              <option value=""></option>
+              <option value="other">Other</option>
               <option value="hackathon">Hackathon</option>
               <option value="job-fair">Job Fair</option>
               <option value="tech-conference">Tech Conference</option>
               <option value="college-club">College Club</option>
-              <option value="other">Other</option>
             </select>
           </div>
           <div class="form-items">
